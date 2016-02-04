@@ -1,5 +1,6 @@
 #!/bin/bash
 
+mysql -uroot --password=mypass -e"create database mylog;"
 
 export MYSQL_USER="root"
 export MYSQL_PASS="admin"
