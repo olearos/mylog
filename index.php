@@ -6,7 +6,7 @@ R::setup("mysql:host=".getenv('MYSQL_HOST').";dbname=".getenv('MYSQL_DATABASE'),
 R::setAutoResolve( TRUE );        //Recommended as of version 4.2
 
 $post = R::dispense('line');
-$post->text = date("Y-m-d H:i:s") . ": " . implode(" ", $_GET);
+$post->text = date("Y-m-d H:i:s") . ": ip: " . $SERVER['REMOTE_ADDR'] . " |"  . implode(" ", $_GET);
 
 
 
